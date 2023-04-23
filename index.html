@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barera</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  />
+  <script
+    src="https://kit.fontawesome.com/b28c5c70b8.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div id="body">
+      
+        
+      <header>
+        <section class="top">
+          <div class="topleft"><h1>Le café de la Place</h1></div>
+          <div class="topright">
+            <a href="#between"">Voir le stock</a>
+            <a href="#footer"
+              ><button type="button" class="btn btn-outline-warning">
+                + Créer un produit.
+              </button></a
+            >
+          </div>
+        </section>
+      </header>
+      
+      <section id="array_area">
+        <h1 class="array_title">Gestion du stockage</h1>
+      </section>
+      <div id="between">
+        <div id="array_stock"></div>
+      </div>
+      <table id="table">
+        <thead id="heads">
+          <tr>
+            <th class="titles_tab" scope="col">Produit</th>
+            <th class="titles_tab" scope="col">Stock</th>
+            <th class="titles_tab" scope="col">Type</th>
+            <th class="titles_tab" scope="col">Prix d'achat HT</th>
+            <th class="titles_tab" scope="col">Prix de vente HT</th>
+            <th class="titles_tab" scope="col">Marge</th>
+            <th class="titles_tab" scope="col">Actions</th>
+          </tr>
+        </thead>
+
+        <tbody class="tbody"></tbody>
+      </table>
+      <footer>
+        <div id="footer">
+          <br />
+
+          <input
+            type="text"
+            id="nom"
+            class="form_modif"
+            size="40"
+            placeholder="Nom du produit"
+          />
+
+          <select name="alcool" id="alcool" class="form_modif">
+            <option value="Alcoolisé">Alcoolisé</option>
+            <option value="Non-Alcoolisé">Non-Alcoolisé</option>
+          </select>
+          <br />
+
+          <input
+            type="number"
+            id="achat"
+            class="form_modif"
+            placeholder="Prix d'achat HT"
+          />
+
+          <input
+            type="number"
+            id="vente"
+            class="form_modif"
+            placeholder="Prix de vente HT"
+          />
+
+          <label for="tva" class="form_modif">TVA</label>
+          <select name="tva" id="tva" class="form_modif">
+            <option value="20">20 %</option>
+            <option value="10">10 %</option>
+          </select>
+          <br />
+
+          <input
+            type="number"
+            id="stock"
+            class="form_modif"
+            placeholder="Stock"
+          />
+
+          <input
+            type="number"
+            id="degre"
+            class="form_modif"
+            placeholder="Degré d'alcool"
+          />
+          <br />
+
+          <button id="valid">Valider</button>
+        </div>
+      </footer>
+      <div id="space_empty"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

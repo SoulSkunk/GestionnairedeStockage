@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  background-color: #383737;
+  height: 100px;
+  border-bottom: solid 7px orange;
+}
+
+.top {
+  display: flex;
+  padding-top: 14px;
+}
+.topleft {
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.topright {
+  display: flex;
+  align-self: center;
+  flex-grow: 2;
+  justify-content: space-evenly;
+  color: grey;
+  font-size: 19px;
+}
+
+a {
+  color: #858585 !important;
+}
+a:hover {
+  color: #0056b3;
+}
+
+/* suite */
+
+/*le titre du tableau de stockage*/
+#array_area {
+  margin-top: 5%;
+}
+.array_title {
+  text-align: center;
+  color: #383737;
+  font-size: 2vw;
+}
+/*Le tableau de stockage*/
+
+/*CSS DU TAB*/
+#heads {
+  background-color: orange;
+}
+table {
+  background-color: #383737;
+  width: 70%;
+}
+table,
+th,
+td {
+  border-right: 1px solid rgb(94, 94, 94);
+  text-align: center;
+  margin: auto;
+  color: #ffffffe0;
+}
+
+/*l'onglet d'ajout d'une boisson*/
+#footer {
+  margin-left: 17%;
+  margin-top: 70%;
+  text-align: center;
+  width: 66vw;
+  height: 17.5vw;
+  background-color: #383737;
+}
+.form_modif {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 1%;
+  border-color: orange;
+  font-size: 1.7vw;
+}
+
+#valid {
+  padding: 0px 20px 0px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 1.7vw;
+}
+#valid:hover {
+  background-color: white;
+  color: orange;
+}
+
+a {
+  font-size: 1vw;
+}
+
+/*div vide pour pouvoir descendre*/
+#space_empty {
+  height: 15vw;
+  width: auto;
+}
